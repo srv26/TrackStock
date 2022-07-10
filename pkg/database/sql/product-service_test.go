@@ -68,7 +68,7 @@ func TestUpdateItemById(t *testing.T) {
 		repo.Close()
 	}()
 
-	query := "UPDATE PRODUCT SET ProductId = @id, PrdtName = @name ,Stock = @stock  WHERE ProductId = @inputId"
+	query := "UPDATE PRODUCT SET ProductId = @id, PrdtName = @name ,Stock = @stock  WHERE ProductId = @id"
 
 	mock.ExpectExec(query).WithArgs(u.ID, u.Name, 3, u.ID).WillReturnResult(sqlmock.NewResult(0, 1))
 
