@@ -44,8 +44,6 @@ func (h *Handler) AddItem(response http.ResponseWriter, r *http.Request) {
 		return
 	}
 	response.WriteHeader(http.StatusNoContent)
-	// res := Response{Success: true}
-	// utils.ResponseWithJson(response, http.StatusNoContent, res)
 }
 
 // route GET /products/{id} products GetItemById
