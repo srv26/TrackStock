@@ -38,7 +38,7 @@ func main() {
 
 		err := s.ListenAndServe()
 		if err != nil {
-			log.Fatalf("Error starting server", "error", err)
+			log.Fatalf("Error starting server error %v", err)
 			os.Exit(1)
 		}
 	}()
