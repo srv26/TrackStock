@@ -19,14 +19,6 @@ type Handler struct {
 	DbStorage models.Repository
 }
 
-// func init() {
-// 	var err error
-// 	dbStorage, err = sql.SetupSqlStorage()
-// 	if err != nil {
-// 		panic(err)
-// 	}
-// }
-
 // route POST /product/ product AddItem
 // Add a products details
 //
